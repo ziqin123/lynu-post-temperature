@@ -209,7 +209,7 @@ def main(account):
 
     if resp.text == "true" or resp.text == "True":
         data = temperature_data()
-        # requests.post(url="https://apii.lynu.edu.cn/v1/temperatures/", headers=headers, json=data)
+        requests.post(url="https://apii.lynu.edu.cn/v1/temperatures/", headers=headers, json=data)
 
     elif resp.text == "false" or resp.text == "False":
         r_data = report_data()
